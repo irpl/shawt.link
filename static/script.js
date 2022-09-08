@@ -1,6 +1,6 @@
 document.getElementById("submit").addEventListener("click", function (e) {
   e.preventDefault();
-  let longLink = document.getElementById("long-link").ariaValueMax;
+  let longLink = document.getElementById("long-link").value;
   let body = {
     url: longLink,
   };
