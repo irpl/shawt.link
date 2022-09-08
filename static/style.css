@@ -20,8 +20,8 @@ h3 {
 }
 
 .shawt-box {
-  padding: 0 50px;
-  height: 300px;
+  padding: 50px 50px;
+  margin-left: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,28 +33,43 @@ h3 {
   width: 100%;
 }
 
+.shawt-box-row-submit {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .shawt-box-input {
   width: 100%;
   height: 50px;
   display: block;
 }
 
+.shawt-link-output,
+.shawt-link-output > div {
+  background-color: #d5fff5;
+}
+
 .showt-box-submit {
   color: black;
   padding: 12px 20px;
+  height: 50px;
 }
 
 input[type="color"],
 input[type="text"],
 select {
   width: 100%;
-  padding: 12px 20px;
+  padding: 9px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid white;
+  border: none;
   border-radius: 4px;
   box-sizing: border-box;
   outline: none;
+}
+
+input[type="text"]:disabled {
+  background: rgba(0, 0, 0, 0);
 }
 
 body,

@@ -13,6 +13,8 @@ document.getElementById("submit").addEventListener("click", function (e) {
       body: JSON.stringify(body),
     })
       .then((res) => res.json())
-      .then((json) => console.log(json));
+      .then((json) => {
+        document.getElementById("shawt-link").value = `https://shawt.link/${json.link_id}`;
+      });
   }
 });
