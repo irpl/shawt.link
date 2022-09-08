@@ -66,7 +66,8 @@ def test():
 
 @app.get("/{link_id}")
 async def get_link_id(link_id: str, response_class=RedirectResponse):
-    if (shawt_link := await db["shawt_links"].find_one({"link_id": link_id})) is not None:
+    shawt_link = await db["shawt_links"].find_one({"link_id": link_id})
+    if (shawt_link) is not None:
         update_shawt_link = await db["shawt_links"].update_one({"link_id": link_id}, {"$inc": { "visits": 1 }})
         return RedirectResponse(shawt_link["url"])
     raise HTTPException(status_code=404, detail=f"Shawt link {id} not found")
