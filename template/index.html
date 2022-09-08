@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/blocks.css/dist/blocks.min.css" />
+    <link rel="shortcut icon" href="{{ url_for('static', path='favicon.ico') }}" type="image/x-icon" />
+    <title>shawt link</title>
+    <style>
+      :root {
+        --block-accent-color: #fab700;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        font-weight: 900;
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        height: 100%;
+        width: 800px;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .shawt-box {
+        padding: 0 50px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+      }
+
+      .shawt-box-row {
+        /* margin-bottom: 20px; */
+        width: 100%;
+      }
+
+      .shawt-box-input {
+        width: 100%;
+        height: 50px;
+        display: block;
+      }
+
+      .showt-box-submit {
+        color: black;
+        padding: 12px 20px;
+      }
+
+      input[type="color"],
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        outline: none;
+      }
+
+      body,
+      html {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="card">
+        <h2>
+          <img src="{{ url_for('static', path='paper-clip.svg') }}" alt="" height="20" />
+          shawt link?
+        </h2>
+        <label class="input">
+          <input class="input__field" type="text" placeholder=" " />
+          <span class="input__label">website.com?</span>
+        </label>
+        <div class="button-group">
+          <button>Send</button>
+          <button type="reset">Reset</button>
+        </div>
+      </div> -->
+
+      <div class="shawt-box block fixed">
+        <div class="shawt-box-row">
+          <h2>shawt link?</h2>
+        </div>
+        <div class="shawt-box-row wrapper block fixed">
+          <div class="shawt-box-input">
+            <input type="text" name="" id="" />
+          </div>
+        </div>
+        <div class="shawt-box-row">
+          <!-- <div class=""> -->
+          <button class="showt-box-submit block accent">Shawt</button>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
