@@ -21,6 +21,7 @@ h2 {
 .shawt-box {
   padding: 50px;
   margin-left: 100px;
+  width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
