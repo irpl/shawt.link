@@ -4,9 +4,7 @@
 body {
   font-family: "Inter", sans-serif;
 }
-h1,
-h2,
-h3 {
+h2 {
   font-weight: 900;
   margin: 0;
 }
@@ -14,13 +12,14 @@ h3 {
 .container {
   display: flex;
   height: 100%;
-  width: 800px;
+  /* width: 800px; */
   flex-direction: column;
   justify-content: center;
+  padding: 0 10px;
 }
 
 .shawt-box {
-  padding: 50px 50px;
+  padding: 50px;
   margin-left: 100px;
   display: flex;
   flex-direction: column;
@@ -28,8 +27,15 @@ h3 {
   gap: 25px;
 }
 
+@media only screen and (max-width: 600px) {
+  .shawt-box {
+    padding: 25px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
 .shawt-box-row {
-  /* margin-bottom: 20px; */
   width: 100%;
 }
 
@@ -42,25 +48,42 @@ h3 {
   width: 100%;
   height: 50px;
   display: block;
+  /* font-size: 2.5rem; */
+}
+
+.shawt-link-output {
+  display: flex !important;
+}
+
+.shawt-link-copy-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: 0 5px !important; */
+  padding-right: 8px;
+  display: none;
 }
 
 .shawt-link-output,
 .shawt-link-output > div {
-  background-color: #d5fff5;
+  background-color: #d5fff5 !important;
 }
 
 .showt-box-submit {
   color: black;
   padding: 12px 20px;
   height: 50px;
+  font-size: 16px;
 }
 
 input[type="color"],
 input[type="text"],
 select {
   width: 100%;
+  height: 100%;
   padding: 9px 20px;
-  margin: 8px 0;
+  /* margin: 8px 0; */
+  font-size: 18px;
   display: inline-block;
   border: none;
   border-radius: 4px;
@@ -75,4 +98,5 @@ input[type="text"]:disabled {
 body,
 html {
   height: 100%;
+  margin: 0;
 }
